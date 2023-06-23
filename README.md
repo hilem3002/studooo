@@ -1,2 +1,2 @@
 # studooo
-a social media aqq for university students
+a social media app for university students
