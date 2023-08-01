@@ -10,9 +10,11 @@ import java.util.List;
 public abstract class userService {
 
     private final userRepository repository;
+    private final postRepository repositoryPost;
 
-    public userService(userRepository repository) {
+    public userService(userRepository repository, postRepository repositoryPost) {
         this.repository = repository;
+        this.repositoryPost = repositoryPost;
     }
 
     // getting the users with these parameters
@@ -42,10 +44,39 @@ public abstract class userService {
         return getRepository().save(oldUser);
     }
 
+    // getting posts from database with their ids
+    public List<Posts> getPosts(int postId, regularUser user) {
+        if (postId == 0 && user == null) {
+            return getRepositoryPost().findAll();
+        }
+        else {
+            if (user != null) {
+                return getRepositoryPost().findPostByUser(user);
+            }
+            else {
+                return getRepositoryPost().findPostByPostId(postId);
+            }
+        }
+    }
+
+    // adding a post to database
+    public Posts sendPost(Posts posts) {
+        return getRepositoryPost().save(posts);
+    }
+
+    // deleting the post from database
+    public Posts deletePost(int postId) {
+        return getRepositoryPost().deleteById(postId);
+    }
+
 
 
     public userRepository getRepository() {
         return repository;
+    }
+
+    public postRepository getRepositoryPost() {
+        return repositoryPost;
     }
 
 
