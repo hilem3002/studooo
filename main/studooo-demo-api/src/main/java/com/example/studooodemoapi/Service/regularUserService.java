@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class regularUserService extends userService{
 
-    public regularUserService(userRepository repository) {
-        super(repository);
+    public regularUserService(userRepository repository, postRepository repositoryPost) {
+        super(repository, repositoryPost);
     }
 
     @Override
