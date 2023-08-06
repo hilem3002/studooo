@@ -17,10 +17,24 @@ public abstract class User implements Parcelable {
     private String username;
     private String eposta;
     private String pass;
+    private String profile_photo;
+    private String bio;
+    private String uni = "Ege Üniversitesi";
 
     private ApiRequest request = new ApiRequest();
 
     public User(){ // No parameter constructer
+    }
+
+    public User(int user_id, String name, String username, String eposta, String pass, String profile_photo, String bio, String uni) {
+        this.user_id = user_id;
+        this.name = name;
+        this.username = username;
+        this.eposta = eposta;
+        this.pass = pass;
+        this.profile_photo = profile_photo;
+        this.bio = bio;
+        this.uni = uni;
     }
 
     public User(int user_id, String name, String username, String eposta, String pass) { // request constructer
@@ -189,6 +203,18 @@ public abstract class User implements Parcelable {
         return request;
     }
 
+    public String getProfile_photo() {
+        return profile_photo;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public String getUni() {
+        return uni;
+    }
+
     public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
@@ -211,5 +237,17 @@ public abstract class User implements Parcelable {
 
     public void setRequest(ApiRequest request) {
         this.request = request;
+    }
+
+    public void setProfile_photo(String profile_photo) {
+        this.profile_photo = profile_photo;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
+    }
+
+    public void setUni(String uni) {
+        this.uni = uni;
     }
 }
