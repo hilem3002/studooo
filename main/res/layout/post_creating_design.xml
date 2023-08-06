@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="@color/BackgroundColor"
+    tools:context=".UserSignUpLogin.Activities.PostCreatingActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/BackgroundColor"
+        android:layout_marginTop="40dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            app:cornerRadius="30dp"
+            android:text="Gönder"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            android:textColor="@color/BackgroundColor"
+            android:backgroundTint="@color/ButtonColor"
+            android:id="@+id/PostCreatingButton"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            app:cornerRadius="30dp"
+            android:text="İptal et"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            android:textColor="@color/ButtonColor"
+            android:backgroundTint="@color/BackgroundColor"
+            android:id="@+id/PostDeleteButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:strokeColor="@color/ButtonColor"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="80dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            app:cornerRadius="30dp"
+            android:text="sil"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            android:textColor="@color/ButtonColor"
+            android:backgroundTint="@color/BackgroundColor"
+            android:id="@+id/PostCleanButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:strokeColor="@color/ButtonColor"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_horizontal"
+            app:cardBackgroundColor="@color/EdittextColor"
+            app:cardCornerRadius="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/EdittextColor">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/HintTextColor"
+                    android:src="@drawable/baseline_person_24"
+                    android:id="@+id/profilePhoto"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:backgroundTint="@color/HintTextColor"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="17dp"
+                android:src="@drawable/ege"
+                android:id="@+id/uniLogoPhoto"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="15dp"
+                android:text="kullanıcı adı"
+                android:textColor="@color/MainTextColor"
+                android:textSize="13sp"
+                android:id="@+id/usernameTextInPostCreating"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="30dp"
+                android:text="Ege üniversitesi"
+                android:textColor="@color/HintTextColor"
+                android:textSize="11sp"
+                android:id="@+id/uniNameInPostCreating"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="320dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_add_a_photo_24"
+                android:backgroundTint="@color/EdittextColor"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/addPhotoButton"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/postTextEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/EdittextColor"
+                android:textColor="@color/MainTextColor"
+                android:hint="meraktan öldük"
+                android:textColorHint="@color/HintTextColor"
+                android:textSize="12sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="20dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/BackgroundColor">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@color/EdittextColor"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="left"
+                android:id="@+id/postCreatView1"
+                android:visibility="invisible"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@color/EdittextColor"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="right"
+                android:id="@+id/postCreatView2"
+                android:visibility="invisible"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/BackgroundColor">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/postPhoto"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
