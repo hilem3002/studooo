@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSignUpLogin.Activities.notiticationActivity.BolumSecmeActivity"
+    android:background="@color/BackgroundColor"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bolumSecmeRV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewBolumSecme" />
+
+    <androidx.appcompat.widget.SearchView
+        android:background="@drawable/search_view"
+        android:layout_marginTop="15dp"
+        android:id="@+id/searchViewBolumSecme"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:iconifiedByDefault="false"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/BackgroundColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bolumSecmeRV"
+        app:menu="@menu/bottomnav"
+        android:id="@+id/bottommenu"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundColor"
+    android:orientation="vertical"
+    tools:context=".UserSignUpLogin.Activities.PostActivities.commentActivity">
+
+    <include
+        layout="@layout/cardview"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@color/BackgroundColor"
+            android:elevation="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/commentEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/EdittextColor"
+            android:hint="yorum"
+            android:textColor="@color/HintTextColor"
+            android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            app:cornerRadius="20dp"
+            android:text="at"
+            android:textColor="@color/BackgroundColor"
+            android:backgroundTint="@color/ButtonColor"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:id="@+id/sendComButton"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BackgroundColor"
+        android:paddingTop="10dp"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/rv"/>
+
+</LinearLayout>

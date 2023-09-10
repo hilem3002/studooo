@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:backgroundTint="@color/BackgroundColor"
+        android:id="@+id/commentCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_person_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/pp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="kullanıcı adı"
+                        android:textColor="@color/MainTextColor"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="6dp"
+                        android:textSize="13sp"
+                        android:id="@+id/username"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ege"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <ImageButton
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/baseline_delete_24"
+                        android:layout_marginStart="220dp"
+                        android:id="@+id/deleteCommentButton"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yorum"
+                    android:textColor="@color/MainTextColor"
+                    android:textSize="12sp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/commentText"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

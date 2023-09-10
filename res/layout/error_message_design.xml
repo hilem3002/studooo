@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/BackgroundColor"
+    tools:context=".UserSignUpLogin.Activities.loginActivities.ErrorMessageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oops!"
+            android:textColor="@color/MainTextColor"
+            android:textStyle="bold"
+            android:textSize="31sp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/ErrorHeaderText"/>
+
+        <TextView
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:text="Bir şeyler yanlış gidiyor gibi gözüküyor. Bu sorunu en kısa sürede çözmeye  çalışacağız"
+            android:textColor="@color/MainTextColor"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/ErrorDescriptionText"
+            android:layout_marginBottom="50dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:id="@+id/ErrorPic"
+            android:src="@drawable/pngegg"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="237dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            app:cornerRadius="30dp"
+            android:text="GERİ DÖN"
+            android:textSize="10sp"
+            android:textColor="@color/BackgroundColor"
+            android:backgroundTint="@color/ButtonColor"
+            android:id="@+id/GoBackButton"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

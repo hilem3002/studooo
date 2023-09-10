@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">studoooV2</string>
+    <string name="aboutUsTitle">About us</string>
+    <string name="aboutUsText">Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu BING CHILLING 🥶🍦 wǒ hěn xǐhuān BING CHILLING 🥶🍦 dànshì sùdù yǔ jīqíng 9 bǐ BING CHILLING 🥶🍦 sùdù yǔ jīqíng sùdù yǔ jīqíng 9 wǒ zuì xǐhuān suǒyǐ…xiànzài shì yīnyuè shíjiān zhǔnbèi 1 2 3 liǎng gè lǐbài yǐhòu sùdù yǔ jīqíng 9 ×3 bùyào wàngjì bùyào cu òguò jìdé qù diànyǐngyuàn kàn sùdù yǔ jīqíng 9 yīn wéi fēicháng hǎo diànyǐng dòngzuò fēicháng hǎo chàbùduō yīyàng BING CHILLING 🥶🍦zàijiàn 🥶🍦</string>
+    <string name="EditProfileTitle">Edit Düzenle</string>
+    <string name="EditProfileButtonText">EDIT PROFILE</string>
+    <string name="PostButtonText">0 Posts</string>
+    <string name="settingsTitle">Settings</string>
+    <string name="lightThemeText">Light Theme</string>
+    <string name="notificationsText">Notifications</string>
+    <string name="publicAccountText">Public Account</string>
+    <string name="languagesText">Language</string>
+    <string name="aboutUsButtonText">About us</string>
+    <string name="feedbackButtonText">Give us a feedback</string>
+    <string name="logOutButtonText">Log out</string>
+    <string name="errorHeaderText">Oops!</string>
+    <string name="errorExplaningText">Seem something went wrong, we will solve asap</string>
+    <string name="goBackErrorButton">TURN BACK</string>
+    <string name="AccountAutherizationHeader">VERIFY YOUR ACCOUNT</string>
+    <string name="AutherizationCodeExplainer">Enter an e-mail address so we can send a verification code</string>
+    <string name="SendCodeButtonText">SEND CODE</string>
+    <string name="LogInHeader">Sign Up</string>
+    <string name="LoginDescriptionText">Please fill the necessary informations</string>
+    <string name="forgotPasswordText">Did you forgot your password? </string>
+    <string name="noAccountText">Dont you have an account?</string>
+    <string name="LogInButtonText">LOG IN</string>
+    <string name="SignUpButtonText">REGISTER</string>
+    <string name="changePasswordText">Change password</string>
+    <string name="changePasswordExplainText">You have successfuly verify your account,now you can create a new password</string>
+    <string name="buttonChangeText">CHANGE</string>
+    <string name="changePassSuccedText">SUCCESS</string>
+    <string name="changePassSuccedExplain">You have successfully create a new password</string>
+    <string name="createAccountTextHeader">Create an account</string>
+    <string name="createAccountExplain">Please fill the necessary informations</string>
+    <string name="alreadyHaveAccountText">Already have an account?</string>
+    <string name="welcomeText">Welcome!</string>
+    <string name="signupSuccedText">You have successfully register</string>
+    <string name="verifyCodeText">Verify Code</string>
+    <string name="verifyCodeExplain">We send a code to your e-mail, you need to verify before the time runs out</string>
+    <string name="buttonVerifyText">VERIFY</string>
+    <string name="timerStartText">02:00</string>
+    <string name="missingCodeText">Code did not arrived ? </string>
+    <string name="sendAgainButtonText">SEND AGAIN</string>
+    <string name="hintNameInputLayout">NAME</string>
+    <string name="hintUsernameInputLayout">Username</string>
+    <string name="hintPasswordInputLayout">Password</string>
+    <string name="hintEmailInputLayout">E-mail</string>
+    <string name="hintBiographyInputLayout">About me</string>
+    <string name="hintUniversityInputLayout">University</string>
+    <string name="saveAllButtonText">SAVE</string>
+    <string name="hintForgotPasswordLayout">Username or e-mail</string>
+    <string name="hintNewPasswordLayout">New password</string>
+    <string name="hintNewPasswrodLayoutAgain">New password,again</string>
+    <string name="hintNameExplainLayout">Full name</string>
+    <string name="hintUsernameExplainLayout">You can change your username later</string>
+    <string name="hintEmailExplainLayout">Enter an e-mail address</string>
+    <string name="hintPasswordExplainLayout">At least 6 character length</string>
+    <string name="hintPasswordAgain">Password again</string>
+    <string name="egeUniText">Ege Üniversity</string>
+
+
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/EdittextColor">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewProfilePhoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_person_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/deletePostButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/EdittextColor"
+                android:src="@drawable/baseline_delete_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:text="name"
+                android:textColor="@color/MainTextColor"
+                app:layout_constraintStart_toEndOf="@+id/imageViewProfilePhoto"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewUniversityLogo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/ege"
+                app:civ_border_color="@color/HintTextColor"
+                app:civ_border_width="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textViewUniversityName"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:text="University"
+                android:textColor="@color/HintTextColor"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewUniversityLogo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewPostText"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:text="text post"
+                android:textColor="@color/MainTextColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewProfilePhoto" />
+
+            <TextView
+                android:id="@+id/textViewPostDate"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="03.08.2023 13.10 saati tarihinde"
+                android:textColor="@color/HintTextColor"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card" />
+
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="2dp"
+                android:text="/@username"
+                android:textColor="@color/HintTextColor"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/imageViewProfilePhoto"
+                app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+            <ImageButton
+                android:id="@+id/likeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/EdittextColor"
+                app:layout_constraintStart_toEndOf="@+id/commentButton"
+                app:layout_constraintTop_toBottomOf="@+id/card"
+                app:srcCompat="@drawable/baseline_favorite_border_24" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="27dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPostText"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/imageViewPostImage"
+                    android:layout_width="340dp"
+                    android:layout_height="350dp"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/commentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/EdittextColor"
+                android:src="@drawable/baseline_comment_24"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="457dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

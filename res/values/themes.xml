@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.StudoooV2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/MainTextColor</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/MainTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Diğer stil ayarları -->
+        <item name="textInputStyle">@style/FilledBox</item>
+    </style>
+
+    <style name="FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- EditText üzerindeki varsayılan renkler -->
+        <item name="boxStrokeColor">@color/focused_box_stroke_color</item>
+        <item name="boxBackgroundColor">@color/focused_box_background_color</item>
+        <item name="android:textColorHint">@color/HintTextColor</item>
+        <item name="endIconTint">@color/ButtonColor</item>
+    </style>
+    <style name="CustomTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:paddingTop">26dp</item>
+        <!-- Dilediğiniz kadar büyük bir paddingTop değeri verin -->
+    </style>
+
+</resources>

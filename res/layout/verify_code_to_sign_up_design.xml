@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/BackgroundColor"
+    tools:context=".UserSignUpLogin.Activities.loginActivities.VeriftyCodeToSignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kodu doğrula"
+            android:textColor="@color/MainTextColor"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/VerifyCodeToSignUpText"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="E-posta adresine bir doğrulama kodugönderdik süre bitmeden önce bu kodudoğrulamalısın"
+            android:textColor="@color/HintTextColor"
+            android:textSize="9sp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/VerifyCodeToSignUpDescriptionText"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/VerifyCodeToSignUpPinEdittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/EdittextColor"
+            android:inputType="number"
+            android:itemBackground="@color/EdittextColor"
+            android:textColor="@color/MainTextColor"
+            android:textStyle="bold"
+            app:hideLineWhenFilled="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:itemCount="6"
+            app:itemRadius="10dp"
+            app:lineColor="@color/BackgroundColor" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="237dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            app:cornerRadius="30dp"
+            android:text="DOĞRULA"
+            android:textSize="10sp"
+            android:textColor="@color/BackgroundColor"
+            android:backgroundTint="@color/ButtonColor"
+            android:id="@+id/VerifyCodeToSignUpButton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timerSignUp"
+            android:textColor="@color/ButtonColor"
+            android:textSize="16sp"
+            tools:text="02:00"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/ButtonColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kod gelmedi mi?"
+            android:textColor="@color/HintTextColor"
+            android:textSize="12sp"
+            android:layout_marginStart="60dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="237dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:cornerRadius="30dp"
+            android:text="TEKRAR GÖNDER"
+            android:textSize="10sp"
+            android:textColor="@color/ButtonColor"
+            android:backgroundTint="@color/BackgroundColor"
+            android:id="@+id/SendTheCodeAgainToSignUpButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:strokeColor="@color/ButtonColor"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

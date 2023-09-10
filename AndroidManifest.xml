@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudoooV2"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".UserSignUpLogin.Activities.loginActivities.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserSignUpLogin.Activities.settingActivities.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSignUpLogin.Activities.profileActivities.profileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSignUpLogin.Activities.settingActivities.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSignUpLogin.Activities.profileActivities.editProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSignUpLogin.Activities.BeginingActivity.BeginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.loginActivities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.loginActivities.ErrorMessageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.loginActivities.SignUpSucceedActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.loginActivities.ForgotThePassActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.loginActivities.VeriftyCodeToSignUpActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.loginActivities.VerifyCodeToChangePassActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.loginActivities.PassChangingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.loginActivities.PassChangingSucceedActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.PostActivities.PostCreatingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.PostActivities.SearchUsersActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.profileActivities.otherUserProfile"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.PostActivities.commentActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.notiticationActivity.BolumSecmeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSignUpLogin.Activities.notiticationActivity.NotificationRecyclerviewActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserSignUpLogin.Activities.PostActivities.PostSeeActivity"
+            android:exported="false"/>
+    </application>
+
+</manifest>

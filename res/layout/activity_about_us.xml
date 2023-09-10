@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSignUpLogin.Activities.settingActivities.AboutUsActivity"
+    android:background="@color/BackgroundColor">
+
+    <TextView
+        android:id="@+id/aboutUsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/aboutUsTitle"
+        android:textColor="@color/ButtonColor"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aboutUsExplaining"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="218dp"
+        android:text="@string/aboutUsText"
+        android:textColor="@color/MainTextColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsTitle" />
+
+    <ImageButton
+        android:id="@+id/backToSettingsFromAboutUsButton"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/BackgroundColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
